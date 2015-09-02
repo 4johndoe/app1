@@ -12,3 +12,4 @@ class Estate(models.Model):
 
 class Photo(models.Model):
     whose = models.ForeignKey(Estate)
+    file = models.FilePathField
