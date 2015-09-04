@@ -15,9 +15,8 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from estate import urls as estate_urls
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    # url(r'^', include(estate_urls)),
+    url(r'^', include('estate.urls')),
 ]

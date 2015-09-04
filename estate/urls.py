@@ -1,6 +1,6 @@
-# from django.conf.urls import include, url
-# from estate import views
-#
-# urlpatterns = [
-#     url(r'^filii/', views.index, name = 'index'),
-# ]
+from django.conf.urls import include, url
+from django.contrib import admin
+
+urlpatterns = [
+    url(r'^$', 'estate.views.home', name='home'),
+]
